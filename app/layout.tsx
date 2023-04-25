@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <ClientOnly>
-          <Modal title='hello, Airbnb' isOpen/>
+          <Modal title='hello, Airbnb' isOpen actionLabel='submit'/>
           <Navbar />
 
         </ClientOnly>
