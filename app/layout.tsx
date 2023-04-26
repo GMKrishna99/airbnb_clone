@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 import './globals.css'
 import { Nunito } from 'next/font/google'
 import ToasterProvider from './providers/ToasterProvider'
+import LoginModal from './components/Modal/LoginModal'
 export const metadata = {
   title: 'Airbnb',
   description: 'Airbnb Clone',
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={font.className}>
         <ClientOnly>
           <ToasterProvider/>
+          <LoginModal/>
           <RegisterModal/>
           <Navbar />
 
