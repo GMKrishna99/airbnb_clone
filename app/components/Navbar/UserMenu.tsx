@@ -12,6 +12,7 @@ import useRentModal from '@/app/hooks/useRentModal'
 // modals
 
 import Avatar from '../Avatar'
+import { useRouter } from 'next/navigation'
 // interface
 
 interface UserMenuProps {
@@ -21,6 +22,8 @@ const UserMenu: React.FC<UserMenuProps> = ({
     currentUser
 }) => {
     // register modal for onClick function
+    const router = useRouter()
+
     const registerModal = useRegisterModal();
 
     const loginModal = useLoginModal();
@@ -64,7 +67,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                             <>
                                 <MenuItems
                                     label="My trips"
-                                    onClick={() => { }}
+                                    onClick={() => router.push("/trips")}
                                 />
                                 <MenuItems
                                     label="My favorites"
@@ -72,7 +75,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                                 />
                                 <MenuItems
                                     label="My reservations"
-                                    onClick={() => { }}
+                                    onClick={() => router.push("/reservations")}
                                 />
                                 <MenuItems
                                     label="My properties"
