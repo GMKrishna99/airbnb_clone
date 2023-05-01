@@ -8,6 +8,7 @@ import { format } from 'date-fns';
 import useCountries from "@/app/hooks/useCountries";
 import {
     SafeListing, 
+  SafeReservation, 
   //   SafeReservation, 
   safeUser
 } from "@/app/types";
