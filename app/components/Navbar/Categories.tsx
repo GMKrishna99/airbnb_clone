@@ -10,7 +10,8 @@ import {
   GiCaveEntrance, 
   GiForestCamp, 
   GiIsland,
-  GiWindmill
+  GiWindmill,
+  GiMountains
 } from 'react-icons/gi';
 import { FaSkiing } from 'react-icons/fa';
 import { BsSnow } from 'react-icons/bs';
@@ -24,6 +25,11 @@ export const categories = [
         label: 'Beach',
         icon: TbBeach,
         description: 'This property is close to the beach!',
+      },
+      {
+        label: 'Hills',
+        icon: GiMountains,
+        description: 'This property is brand new and luxurious!'
       },
       {
         label: 'Windmills',
@@ -95,6 +101,8 @@ export const categories = [
         icon: IoDiamond,
         description: 'This property is brand new and luxurious!'
       },
+      
+
 ]
 const Categories = () =>{
   const params = useSearchParams();
