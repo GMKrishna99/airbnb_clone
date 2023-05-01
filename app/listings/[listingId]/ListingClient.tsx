@@ -67,7 +67,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
             listingId: listing?.id
         })
             .then(() => {
-                toast.success('Reserved successfully')
+                toast.success('Booked successfully')
                 setDateRange(initialDateRange)
                 // Redirect to /trips
                 router.push('/trips')
