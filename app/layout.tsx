@@ -9,6 +9,7 @@ import './globals.css'
 import { Nunito } from 'next/font/google'
 import ToasterProvider from './providers/ToasterProvider'
 import getCurrentUser from './actions/getCurrentUser'
+import SearchModal from './components/Modal/SearchModal'
 export const metadata = {
   title: 'Airbnb',
   description: 'Airbnb Clone',
@@ -28,6 +29,7 @@ export default async function RootLayout({
       <body className={font.className}>
         <ClientOnly>
           <ToasterProvider/>
+          <SearchModal/>
           <RentModal/>
           <LoginModal/>
           <RegisterModal/>
