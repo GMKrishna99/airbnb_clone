@@ -16,7 +16,7 @@ const Home = async ({ searchParams }: HomeProps) => {
   if (listings.length === 0) {
     return (
       <ClientOnly>
-        <EmptyState showReset />d
+        <EmptyState showReset />
       </ClientOnly>
     )
   }
@@ -38,7 +38,7 @@ const Home = async ({ searchParams }: HomeProps) => {
       </Container>
     </ClientOnly>
   )
-          }
-  export default Home
+}
+export default Home
 
 
